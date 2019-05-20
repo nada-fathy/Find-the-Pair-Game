@@ -1,0 +1,25 @@
+body{
+	background-image: url(Untitled-1.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 100% 100%;
+
+}
+
+h1{
+	text-align: center;
+	color: white;
+	font-family: "Dekar", "Helvetica";
+	font-size: 300%;
+	margin-bottom: 0;
+}
+
+.hints{
+	font-size: 200%;
+	font-family: "Acid","Courier New"; 
+	padding-left: 200px;
+	padding-right: 200px;
+	text-align: center;
+	color: #bebebe;
+}
