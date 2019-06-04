@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Find the Pair Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	 <div class="Timer">
+            <p style="color:brown;font-size: 150%">timer</p>
+             <label id="minute">00</label>:<label id="second">00</label>
+			</div>
+			<br/>
+			<button style="margin-left: 50px"  onclick="setInterval(setTime,1000);starting2();" id="0">
+				Start
+			</button>
+
+			<button  id="1" style="visibility: hidden;" >
+				<a href="intoThegame2.html">reset</a>
+			</button>
+			<br/>
+	<table class="tables">
+		<tr>
+			<td> <input type="image" src="icons/unknown.png" id="im0" onclick="change('im0','icons/behance.png');saveImage('im0','icons/behance.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im1" onclick="change('im1','icons/dropbox.png');saveImage('im1','icons/dropbox.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im2" onclick="change('im2','icons/facebook.png');saveImage('im2','icons/facebook.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im3" onclick="change('im3','icons/googlePlus.png');saveImage('im3','icons/googlePlus.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im4" onclick="change('im4','icons/instgram.png');saveImage('im4','icons/instgram.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im5" onclick="change('im5','icons/line.png');saveImage('im5','icons/line.png');count()"> </input> </td>
+		</tr>
+
+		<tr>
+			<td> <input type="image" src="icons/unknown.png" id="im6" onclick="change('im6','icons/linkedIn.png');saveImage('im6','icons/linkedIn.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im7" onclick="change('im7','icons/p.png');saveImage('im7','icons/p.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im8" onclick="change('im8','icons/sky.png');saveImage('im8','icons/sky.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im9" onclick="change('im9','icons/linkedIn.png');saveImage('im9','icons/linkedIn.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im10" onclick="change('im10','icons/snap.png');saveImage('im10','icons/snap.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im11" onclick="change('im11','icons/pintrest.png');saveImage('im11','icons/pintrest.png');count()"> </input> </td>
+		</tr>
+		<tr>
+			<td> <input type="image" src="icons/unknown.png" id="im12" onclick="change('im12','icons/spotify.png');saveImage('im12','icons/spotify.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im13" onclick="change('im13','icons/telegram.png');saveImage('im13','icons/telegram.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im14" onclick="change('im14','icons/p.png');saveImage('im14','icons/p.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im15" onclick="change('im15','icons/behance.png');saveImage('im15','icons/behance.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im16" onclick="change('im16','icons/tumbler.png');saveImage('im16','icons/tumbler.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im17" onclick="change('im17','icons/twitter.png');saveImage('im17','icons/twitter.png');count()"> </input> </td>
+		</tr>
+		<tr>
+			<td> <input type="image" src="icons/unknown.png" id="im18" onclick="change('im18','icons/youtube.png');saveImage('im18','icons/youtube.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im19" onclick="change('im19','icons/instgram.png');saveImage('im19','icons/instgram.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im20" onclick="change('im20','icons/whatsapp.png');saveImage('im20','icons/whatsapp.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im21" onclick="change('im21','icons/line.png');saveImage('im21','icons/line.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im22" onclick="change('im22','icons/pintrest.png');saveImage('im22','icons/pintrest.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im23" onclick="change('im23','icons/dropbox.png');saveImage('im23','icons/dropbox.png');count()"> </input> </td>
+		</tr>
+		<tr>
+			<td> <input type="image" src="icons/unknown.png" id="im24" onclick="change('im24','icons/youtube.png');saveImage('im24','icons/youtube.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im25" onclick="change('im25','icons/facebook.png');saveImage('im25','icons/facebook.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im26" onclick="change('im26','icons/twitter.png');saveImage('im26','icons/twitter.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im27" onclick="change('im27','icons/telegram.png');saveImage('im27','icons/telegram.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im28" onclick="change('im28','icons/sky.png');saveImage('im28','icons/sky.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im29" onclick="change('im29','icons/tumbler.png');saveImage('im29','icons/tumbler.png');count()"> </input> </td>
+		</tr>
+		<tr>
+			<td> <input type="image" src="icons/unknown.png" id="im30" onclick="change('im30','icons/viber.png');saveImage('im30','icons/viber.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im31" onclick="change('im31','icons/googlePlus.png');saveImage('im31','icons/googlePlus.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im32" onclick="change('im32','icons/whatsapp.png');saveImage('im32','icons/whatsapp.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im33" onclick="change('im33','icons/spotify.png');saveImage('im33','icons/spotify.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im34" onclick="change('im34','icons/viber.png');saveImage('im34','icons/viber.png');count()"> </input> </td>
+			<td> <input type="image" src="icons/unknown.png" id="im35" onclick="change('im35','icons/snap.png');saveImage('im35','icons/snap.png');count()"> </input> </td>
+		</tr>
+
+	
+	</table>
+	<script src="code.js"></script>
+	<script >
+		var secondsLabel=document.getElementById("second");
+		var minutesLabel=document.getElementById("minute");
+		var totalSeconds=0;
+		function setTime(){
+			totalSeconds++;
+			secondsLabel.innerHTML=pad(totalSeconds%60);
+			minutesLabel.innerHTML=pad(parseInt(totalSeconds/60));
+		}
+	
+		function pad(val){
+			var result=val+"";
+			if(result.length<2){
+				return "0"+ result;
+			}
+			else{
+				return result;
+			}
+		}
+		function starting2(){
+			document.getElementById("0").style.visibility='hidden';
+			document.getElementById("1").style.visibility='visible';
+		}
+
+	</script>
+
+	<script type="text/javascript">
+		var counter=0;
+		var arr_of_img=[];
+		var arr_of_id=[];
+		var saved=[];
+		var id1='0';
+		var id2='0';
+		var size=0;
+		var i=0;
+		function count(){
+			counter++;
+			if(test(arr_of_img[0].src)===true){
+				arr_of_img.pop();
+				arr_of_id.pop();
+				counter--;
+				return;
+			}
+			if(test(arr_of_img[1].src)===true){
+				arr_of_img.pop();
+				arr_of_id.pop();
+				counter--;
+				return;
+			}
+			if(counter>=2){
+				id1=arr_of_id[0];
+				id2=arr_of_id[1];
+				if((arr_of_id[0])==(arr_of_id[1])){                  //same image and same position
+					counter--;
+					arr_of_id.pop();
+					arr_of_img.pop();
+				}
+				else if((arr_of_img[0].src)==(arr_of_img[1].src)){   //same image but different position
+					counter=0;
+					document.getElementById(id1).src=arr_of_img[0].src;
+					document.getElementById(id2).src=arr_of_img[1].src;
+					saved.push(arr_of_img[0]);
+					size++;
+					arr_of_id.pop();
+					arr_of_id.pop();
+					arr_of_img.pop();
+					arr_of_img.pop();
+
+				}
+				else{                                                //different image
+					document.getElementById(id1).src="icons/unknown.png";
+					document.getElementById(id2).src="icons/unknown.png";
+					arr_of_id.pop();
+					arr_of_id.pop();
+					arr_of_img.pop();
+					arr_of_img.pop();
+
+				}
+			}
+		}
+		
+		function saveImage(id,img){
+			var image=new Image();
+			image.src=img;
+			arr_of_id.push(id);
+			arr_of_img.push(image);
+		}
+
+		function test(im){
+			for(i=0;i<size;i++){
+				if(saved[i].src===im){
+					return true;
+				}
+			}
+			return false;  
+		}
+	</script>
+
+</body>
+
+</html>
