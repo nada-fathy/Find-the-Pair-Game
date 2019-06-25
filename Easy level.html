@@ -14,17 +14,13 @@
              <label id="minute">00</label>:<label id="second">00</label>
 			</div>
 			<br/>
-			<button style="margin-left: 50px"  onclick="setInterval(setTime,1000);starting2();" id="0">
-				Start
-			</button>
 
-			<button  id="1" style="visibility: hidden;" >
+			<button  id="1"  >
 				<a href="Easy level.html">reset</a>
 			</button>
-			<br/>
-			<button class="h" onclick="hint()">Hint</button>
-			<br/>
-	<table class="tables" style="left: 36%;">
+			<button class="h" onclick="hint()"  id="2">Hint</button>
+			<button class="s" onclick="solve()"  id="3">solve</button>
+	<table class="tables" style="left: 34%;">
 		<tr>
 			<td> <input type="image" src="icons/unknown.png" id="im0" onclick="bg('im0');change('im0','icons/easy/behance.png');saveImage('im0','icons/easy/behance.png');count()"> </input> </td>
 			<td> <input type="image" src="icons/unknown.png" id="im1" onclick="bg('im1');change('im1','icons/easy/dropbox.png');saveImage('im1','icons/easy/dropbox.png');count()"> </input> </td>
@@ -81,6 +77,7 @@
 	
 	<script src="code.js"></script>
 	<script >
+		var time=setInterval(setTime,1000);
 		var secondsLabel=document.getElementById("second");
 		var minutesLabel=document.getElementById("minute");
 		var totalSeconds=0;
@@ -99,9 +96,8 @@
 				return result;
 			}
 		}
-		function starting2(){
-			document.getElementById("0").style.visibility='hidden';
-			document.getElementById("1").style.visibility='visible';
+		function stop(){
+			clearInterval(time);
 		}
 	</script>
 
@@ -119,7 +115,7 @@
 		[6,7,8,6,9,10],
 		[11,12,7,0,13,14],
 		[15,4,16,5,10,1],
-		[11,2,14,12,8,13],
+		[15,2,14,12,8,13],
 		[17,3,16,11,17,9]];
 		function count(){
 			counter++;
@@ -149,6 +145,10 @@
 					document.getElementById(id2).src=arr_of_img[1].src;
 					saved.push(arr_of_img[0]);
 					size++;
+					if(size==18){
+						stop();
+						window.alert("you win");
+					}
 					arr_of_id.pop();
 					arr_of_id.pop();
 					arr_of_img.pop();
@@ -213,6 +213,22 @@
 		function bg(idd){
 			var ph=document.getElementById(idd);
 			ph.style.backgroundColor="transparent";
+		}
+
+		function solve(){
+			stop();
+			change('im0','icons/behance.png');change('im1','icons/dropbox.png');change('im2','icons/facebook.png');
+			change('im3','icons/googlePlus.png');change('im4','icons/instgram.png');change('im5','icons/line.png');
+			change('im6','icons/linkedIn.png');change('im7','icons/p.png');change('im8','icons/sky.png');
+			change('im9','icons/linkedIn.png');change('im10','icons/snap.png');change('im11','icons/pintrest.png');
+			change('im12','icons/spotify.png');change('im13','icons/telegram.png');change('im14','icons/p.png');
+			change('im15','icons/behance.png');change('im16','icons/tumbler.png');change('im17','icons/twitter.png');
+			change('im18','icons/youtube.png');change('im19','icons/instgram.png');change('im20','icons/whatsapp.png');
+			change('im21','icons/line.png');change('im22','icons/pintrest.png');change('im23','icons/dropbox.png');
+			change('im24','icons/youtube.png');change('im25','icons/facebook.png');change('im26','icons/twitter.png');
+			change('im27','icons/telegram.png');change('im28','icons/sky.png');change('im29','icons/tumbler.png');
+			change('im30','icons/viber.png');change('im31','icons/googlePlus.png');change('im32','icons/whatsapp.png');
+			change('im33','icons/spotify.png');change('im34','icons/viber.png');change('im35','icons/snap.png');
 		}
 	</script>
 
