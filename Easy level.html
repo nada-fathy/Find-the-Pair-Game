@@ -9,18 +9,18 @@
 </head>
 
 <body>
+	<br/>
 	 <div class="Timer">
-            <p style="color:brown;font-size: 150%">timer</p>
+	 		Timer
              <label id="minute">00</label>:<label id="second">00</label>
 			</div>
 			<br/>
 
-			<button  id="1"  >
-				<a href="Easy level.html">reset</a>
-			</button>
-			<button class="h" onclick="hint()"  id="2">Hint</button>
-			<button class="s" onclick="solve()"  id="3">solve</button>
-	<table class="tables" style="left: 34%;">
+			<button id="1" class="buttons" onclick="window.location.href = 'Easy level.html';"> reset</button>
+			<button class="buttons" onclick="hint()"  id="2">Hint</button>
+			<button class="buttons" onclick="solve()"  id="3">solve</button>
+			 <br/> <br/>
+	<table class="tables" style="left: 36%;">
 		<tr>
 			<td> <input type="image" src="icons/unknown.png" id="im0" onclick="bg('im0');change('im0','icons/easy/behance.png');saveImage('im0','icons/easy/behance.png');count()"> </input> </td>
 			<td> <input type="image" src="icons/unknown.png" id="im1" onclick="bg('im1');change('im1','icons/easy/dropbox.png');saveImage('im1','icons/easy/dropbox.png');count()"> </input> </td>
@@ -214,21 +214,20 @@
 			var ph=document.getElementById(idd);
 			ph.style.backgroundColor="transparent";
 		}
-
 		function solve(){
 			stop();
-			change('im0','icons/behance.png');change('im1','icons/dropbox.png');change('im2','icons/facebook.png');
-			change('im3','icons/googlePlus.png');change('im4','icons/instgram.png');change('im5','icons/line.png');
-			change('im6','icons/linkedIn.png');change('im7','icons/p.png');change('im8','icons/sky.png');
-			change('im9','icons/linkedIn.png');change('im10','icons/snap.png');change('im11','icons/pintrest.png');
-			change('im12','icons/spotify.png');change('im13','icons/telegram.png');change('im14','icons/p.png');
-			change('im15','icons/behance.png');change('im16','icons/tumbler.png');change('im17','icons/twitter.png');
-			change('im18','icons/youtube.png');change('im19','icons/instgram.png');change('im20','icons/whatsapp.png');
-			change('im21','icons/line.png');change('im22','icons/pintrest.png');change('im23','icons/dropbox.png');
-			change('im24','icons/youtube.png');change('im25','icons/facebook.png');change('im26','icons/twitter.png');
-			change('im27','icons/telegram.png');change('im28','icons/sky.png');change('im29','icons/tumbler.png');
-			change('im30','icons/viber.png');change('im31','icons/googlePlus.png');change('im32','icons/whatsapp.png');
-			change('im33','icons/spotify.png');change('im34','icons/viber.png');change('im35','icons/snap.png');
+			change('im0','icons/easy/behance.png');change('im1','icons/easy/dropbox.png');change('im2','icons/easy/facebook.png');
+			change('im3','icons/easy/googlePlus.png');change('im4','icons/easy/instgram.png');change('im5','icons/easy/line.png');
+			change('im6','icons/easy/linkedIn.png');change('im7','icons/easy/p.png');change('im8','icons/easy/sky.png');
+			change('im9','icons/easy/linkedIn.png');change('im10','icons/easy/snap.png');change('im11','icons/easy/pintrest.png');
+			change('im12','icons/easy/spotify.png');change('im13','icons/easy/telegram.png');change('im14','icons/easy/p.png');
+			change('im15','icons/easy/behance.png');change('im16','icons/easy/tumbler.png');change('im17','icons/easy/twitter.png');
+			change('im18','icons/easy/youtube.png');change('im19','icons/easy/instgram.png');change('im20','icons/easy/whatsapp.png');
+			change('im21','icons/easy/line.png');change('im22','icons/easy/pintrest.png');change('im23','icons/easy/dropbox.png');
+			change('im24','icons/easy/youtube.png');change('im25','icons/easy/facebook.png');change('im26','icons/easy/twitter.png');
+			change('im27','icons/easy/telegram.png');change('im28','icons/easy/sky.png');change('im29','icons/easy/tumbler.png');
+			change('im30','icons/easy/viber.png');change('im31','icons/easy/googlePlus.png');change('im32','icons/easy/whatsapp.png');
+			change('im33','icons/easy/spotify.png');change('im34','icons/easy/viber.png');change('im35','icons/easy/snap.png');
 		}
 	</script>
 

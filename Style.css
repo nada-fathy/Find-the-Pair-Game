@@ -55,7 +55,6 @@ h1{
 
 .tables{
 	position: absolute;
-	left: 33%;
 }
 
 .gameImage{
@@ -63,4 +62,12 @@ h1{
     width: auto; 
     max-width: 70px; 
     max-height: 70px;
+}
+
+.Timer{
+		text-align: center;
+	color: white;
+	font-family: "Dekar", "Helvetica";
+	font-size: 300%;
+	margin-bottom: 0;
 }

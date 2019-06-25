@@ -4,23 +4,24 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Medium level</title>
+	<title>Hard level</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+	<br/>
 	 <div class="Timer">
-            <p style="color:brown;font-size: 150%">timer</p>
+	 		Timer
              <label id="minute">00</label>:<label id="second">00</label>
 			</div>
-		
+			<br/>
 
-			<button  id="1"  >
-				<a href="Hard level.html">reset</a>
-			</button>
-			<button class="h" onclick="hint()"  id="2">Hint</button>
-			<button class="s" onclick="solve()"  id="3">solve</button>
-	<table class="tables" style="left: 22%;">
+			<button id="1" class="buttons" onclick="window.location.href = 'Hard level.html';"> reset</button>
+			<button class="buttons" onclick="hint()"  id="2">Hint</button>
+			<button class="buttons" onclick="solve()"  id="3">solve</button>
+			 <br/> <br/>
+
+	<table class="tables" style="left: 33%;">
 		<tr>
 			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im0" onclick="bg('im0');change('im0','icons/hard/abacus.png');saveImage('im0','icons/hard/abacus.png');count()"> </input> </td>
 			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im1" onclick="bg('im1');change('im1','icons/hard/alarm-clock.png');saveImage('im1','icons/hard/alarm-clock.png');count()"> </input> </td>
@@ -306,7 +307,6 @@
 			var ph=document.getElementById(idd);
 			ph.style.backgroundColor="transparent";
 		}
-
 		function solve(){
 			stop();
 			change('im0','icons/hard/abacus.png');change('im1','icons/hard/alarm-clock.png');change('im2','icons/hard/violin.png');

@@ -9,18 +9,19 @@
 </head>
 
 <body>
+	 <br/>
 	 <div class="Timer">
-            <p style="color:brown;font-size: 150%">timer</p>
+	 		Timer
              <label id="minute">00</label>:<label id="second">00</label>
 			</div>
 			<br/>
 
-			<button  id="1" >
-				<a href="Medium level.html">reset</a>
-			</button>
-			<button class="h" onclick="hint()"  id="2">Hint</button>
-			<button class="s" onclick="solve()"  id="3">solve</button>
-	<table class="tables" style="left: 28%;">
+			<button id="1" class="buttons" onclick="window.location.href = 'Medium level.html';"> reset</button>
+			<button class="buttons" onclick="hint()"  id="2">Hint</button>
+			<button class="buttons" onclick="solve()"  id="3">solve</button>
+			 <br/> <br/>
+
+	<table class="tables" style="left: 33%;">
 		<tr>
 			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im0" onclick="bg('im0');change('im0','icons/med/avi.png');saveImage('im0','icons/med/avi.png');count()"> </input> </td>
 			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im1" onclick="bg('im1');change('im1','icons/med/css.png');saveImage('im1','icons/med/css.png');count()"> </input> </td>
@@ -255,7 +256,6 @@
 			var ph=document.getElementById(idd);
 			ph.style.backgroundColor="transparent";
 		}
-
 		function solve(){
 			stop();
 			change('im0','icons/med/avi.png');change('im1','icons/med/css.png');change('im2','icons/med/csv.png');
