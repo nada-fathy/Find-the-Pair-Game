@@ -24,6 +24,7 @@ h1{
 	text-align: center;
 	color: #bebebe;
 }
+
 .ready{
 	text-align: center;
 	color: white;
@@ -32,6 +33,7 @@ h1{
 	margin-bottom: 0;
 
 }
+
 .buttons{
   background-color: #FF5733;
   border: none;
@@ -44,19 +46,21 @@ h1{
   border-radius: 12px;
   transition-duration: 0.4s;
 }
+
 .buttons:hover {
   background-color: white;
   color: black;
   border: 2px solid #FF5733;
 }
 
-.images{
-	height: 10;
-	width: 10;
-}
-
 .tables{
 	position: absolute;
-	left: 36%;
+	left: 33%;
+}
 
+.gameImage{
+	 height: auto; 
+    width: auto; 
+    max-width: 70px; 
+    max-height: 70px;
 }

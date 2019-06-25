@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Medium level</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	 <div class="Timer">
+            <p style="color:brown;font-size: 150%">timer</p>
+             <label id="minute">00</label>:<label id="second">00</label>
+			</div>
+			<br/>
+			<button style="margin-left: 50px"  onclick="setInterval(setTime,1000);starting2();" id="0">
+				Start
+			</button>
+
+			<button  id="1" style="visibility: hidden;" >
+				<a href="Hard level.html">reset</a>
+			</button>
+			<br/>
+			<button class="h" onclick="hint()">Hint</button>
+			<br/>
+	<table class="tables" style="left: 33%;">
+		<tr>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im0" onclick="bg('im0');change('im0','icons/hard/abacus.png');saveImage('im0','icons/hard/abacus.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im1" onclick="bg('im1');change('im1','icons/hard/alarm-clock.png');saveImage('im1','icons/hard/alarm-clock.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im2" onclick="bg('im2');change('im2','icons/hard/violin.png');saveImage('im2','icons/hard/violin.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im3" onclick="bg('im3');change('im3','icons/hard/university.png');saveImage('im3','icons/hard/university.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im4" onclick="bg('im4');change('im4','icons/hard/desk.png');saveImage('im4','icons/hard/desk.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im5" onclick="bg('im5');change('im5','icons/hard/computer-mouse.png');saveImage('im5','icons/hard/computer-mouse.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im6" onclick="bg('im6');change('im6','icons/hard/pen.png');saveImage('im6','icons/hard/pen.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im7" onclick="bg('im7');change('im7','icons/hard/paint-brush.png');saveImage('im7','icons/hard/paint-brush.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im8" onclick="bg('im8');change('im8','icons/hard/paperclip.png');saveImage('im8','icons/hard/paperclip.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im9" onclick="bg('im9');change('im9','icons/hard/compass.png');saveImage('im9','icons/hard/compass.png');count()"> </input> </td>
+		</tr>
+
+
+		<tr>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im10" onclick="bg('im10');change('im10','icons/hard/computer-mouse.png');saveImage('im10','icons/hard/computer-mouse.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im11" onclick="bg('im11');change('im11','icons/hard/violin.png');saveImage('im11','icons/hard/violin.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im12" onclick="bg('im12');change('im12','icons/hard/university.png');saveImage('im12','icons/hard/university.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im13" onclick="bg('im13');change('im13','icons/hard/whistle.png');saveImage('im13','icons/hard/whistle.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im14" onclick="bg('im14');change('im14','icons/hard/compass.png');saveImage('im14','icons/hard/compass.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im15" onclick="bg('im15');change('im15','icons/hard/paint-brush.png');saveImage('im15','icons/hard/paint-brush.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im16" onclick="bg('im16');change('im16','icons/hard/american-football.png');saveImage('im16','icons/hard/american-football.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im17" onclick="bg('im17');change('im17','icons/hard/diploma.png');saveImage('im17','icons/hard/diploma.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im18" onclick="bg('im18');change('im18','icons/hard/pen.png');saveImage('im18','icons/hard/pen.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im19" onclick="bg('im19');change('im19','icons/hard/column.png');saveImage('im19','icons/hard/column.png');count()"> </input> </td>
+		</tr>
+
+
+		<tr>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im20" onclick="bg('im20');change('im20','icons/hard/american-football.png');saveImage('im20','icons/hard/american-football.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im21" onclick="bg('im21');change('im21','icons/hard/palette.png');saveImage('im21','icons/hard/palette.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im22" onclick="bg('im22');change('im22','icons/hard/apple.png');saveImage('im22','icons/hard/apple.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im23" onclick="bg('im23');change('im23','icons/hard/whistle.png');saveImage('im23','icons/hard/whistle.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im24" onclick="bg('im24');change('im24','icons/hard/pencil.png');saveImage('im24','icons/hard/pencil.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im25" onclick="bg('im25');change('im25','icons/hard/paperclip.png');saveImage('im25','icons/hard/paperclip.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im26" onclick="bg('im26');change('im26','icons/hard/diploma.png');saveImage('im26','icons/hard/diploma.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im27" onclick="bg('im27');change('im27','icons/hard/desk.png');saveImage('im27','icons/hard/desk.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im28" onclick="bg('im28');change('im28','icons/hard/palette.png');saveImage('im28','icons/hard/palette.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im29" onclick="bg('im29');change('im29','icons/hard/fountain-pen.png');saveImage('im29','icons/hard/fountain-pen.png');count()"> </input> </td>
+		</tr>
+
+
+		<tr>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im30" onclick="bg('im30');change('im30','icons/hard/diploma-1.png');saveImage('im30','icons/hard/diploma-1.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im31" onclick="bg('im31');change('im31','icons/hard/student.png');saveImage('im31','icons/hard/student.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im32" onclick="bg('im32');change('im32','icons/hard/set-square.png');saveImage('im32','icons/hard/set-square.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im33" onclick="bg('im33');change('im33','icons/hard/flask.png');saveImage('im33','icons/hard/flask.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im34" onclick="bg('im34');change('im34','icons/hard/test.png');saveImage('im34','icons/hard/test.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im35" onclick="bg('im35');change('im35','icons/hard/test-tubes.png');saveImage('im35','icons/hard/test-tubes.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im36" onclick="bg('im36');change('im36','icons/hard/abacus.png');saveImage('im36','icons/hard/abacus.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im37" onclick="bg('im37');change('im37','icons/hard/student.png');saveImage('im37','icons/hard/student.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im38" onclick="bg('im38');change('im38','icons/hard/backpack.png');saveImage('im38','icons/hard/backpack.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im39" onclick="bg('im39');change('im39','icons/hard/alarm-clock.png');saveImage('im39','icons/hard/alarm-clock.png');count()"> </input> </td>
+		</tr>
+
+
+		<tr>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im40" onclick="bg('im40');change('im40','icons/hard/earth-globe.png');saveImage('im40','icons/hard/earth-globe.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im41" onclick="bg('im41');change('im41','icons/hard/earth-globe.png');saveImage('im41','icons/hard/earth-globe.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im42" onclick="bg('im42');change('im42','icons/hard/eraser.png');saveImage('im42','icons/hard/eraser.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im43" onclick="bg('im43');change('im43','icons/hard/flask.png');saveImage('im43','icons/hard/flask.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im44" onclick="bg('im44');change('im44','icons/hard/mortarboard.png');saveImage('im44','icons/hard/mortarboard.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im45" onclick="bg('im45');change('im45','icons/hard/test-tubes.png');saveImage('im45','icons/hard/test-tubes.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im46" onclick="bg('im46');change('im46','icons/hard/molecule.png');saveImage('im46','icons/hard/molecule.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im47" onclick="bg('im47');change('im47','icons/hard/apple.png');saveImage('im47','icons/hard/apple.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im48" onclick="bg('im48');change('im48','icons/hard/owl.png');saveImage('im48','icons/hard/owl.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im49" onclick="bg('im49');change('im49','icons/hard/backpack.png');saveImage('im49','icons/hard/backpack.png');count()"> </input> </td>
+		</tr>
+
+
+		<tr>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im50" onclick="bg('im50');change('im50','icons/hard/light-bulb.png');saveImage('im50','icons/hard/light-bulb.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im51" onclick="bg('im51');change('im51','icons/hard/open-book.png');saveImage('im51','icons/hard/open-book.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im52" onclick="bg('im52');change('im52','icons/hard/owl.png');saveImage('im52','icons/hard/owl.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im53" onclick="bg('im53');change('im53','icons/hard/medal.png');saveImage('im53','icons/hard/medal.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im54" onclick="bg('im54');change('im54','icons/hard/open-book.png');saveImage('im54','icons/hard/open-book.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im55" onclick="bg('im55');change('im55','icons/hard/notebook.png');saveImage('im55','icons/hard/notebook.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im56" onclick="bg('im56');change('im56','icons/hard/briefcase.png');saveImage('im56','icons/hard/briefcase.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im57" onclick="bg('im57');change('im57','icons/hard/diploma-1.png');saveImage('im57','icons/hard/diploma-1.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im58" onclick="bg('im58');change('im58','icons/hard/eraser.png');saveImage('im58','icons/hard/eraser.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im59" onclick="bg('im59');change('im59','icons/hard/basketball.png');saveImage('im59','icons/hard/basketball.png');count()"> </input> </td>
+		</tr>
+
+
+		<tr>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im60" onclick="bg('im60');change('im60','icons/hard/blackboard.png');saveImage('im60','icons/hard/blackboard.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im61" onclick="bg('im61');change('im61','icons/hard/glasses.png');saveImage('im61','icons/hard/glasses.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im62" onclick="bg('im62');change('im62','icons/hard/fountain-pen.png');saveImage('im62','icons/hard/fountain-pen.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im63" onclick="bg('im63');change('im63','icons/hard/basketball.png');saveImage('im63','icons/hard/basketball.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im64" onclick="bg('im64');change('im64','icons/hard/microscope.png');saveImage('im64','icons/hard/microscope.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im65" onclick="bg('im65');change('im65','icons/hard/bookshelf.png');saveImage('im65','icons/hard/bookshelf.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im66" onclick="bg('im66');change('im66','icons/hard/light-bulb.png');saveImage('im66','icons/hard/light-bulb.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im67" onclick="bg('im67');change('im67','icons/hard/column.png');saveImage('im67','icons/hard/column.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im68" onclick="bg('im68');change('im68','icons/hard/briefcase.png');saveImage('im68','icons/hard/briefcase.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im69" onclick="bg('im69');change('im69','icons/hard/blackboard.png');saveImage('im69','icons/hard/blackboard.png');count()"> </input> </td>
+		</tr>
+
+
+		<tr>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im70" onclick="bg('im70');change('im70','icons/hard/medal.png');saveImage('im70','icons/hard/medal.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im71" onclick="bg('im71');change('im71','icons/hard/notebook.png');saveImage('im71','icons/hard/notebook.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im72" onclick="bg('im72');change('im72','icons/hard/microscope.png');saveImage('im72','icons/hard/microscope.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im73" onclick="bg('im73');change('im73','icons/hard/bell.png');saveImage('im73','icons/hard/bell.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im74" onclick="bg('im74');change('im74','icons/hard/newtons-cradle.png');saveImage('im74','icons/hard/newtons-cradle.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im75" onclick="bg('im75');change('im75','icons/hard/mortarboard.png');saveImage('im75','icons/hard/mortarboard.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im76" onclick="bg('im76');change('im76','icons/hard/glasses.png');saveImage('im76','icons/hard/glasses.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im77" onclick="bg('im77');change('im77','icons/hard/molecule.png');saveImage('im77','icons/hard/molecule.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im78" onclick="bg('im78');change('im78','icons/hard/newtons-cradle.png');saveImage('im78','icons/hard/newtons-cradle.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im79" onclick="bg('im79');change('im79','icons/hard/blackboard-1.png');saveImage('im79','icons/hard/blackboard-1.png');count()"> </input> </td>
+		</tr>
+
+
+		<tr>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im80" onclick="bg('im80');change('im80','icons/hard/pencil.png');saveImage('im80','icons/hard/pencil.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im81" onclick="bg('im81');change('im81','icons/hard/scissors.png');saveImage('im81','icons/hard/scissors.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im82" onclick="bg('im82');change('im82','icons/hard/physics.png');saveImage('im82','icons/hard/physics.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im83" onclick="bg('im83');change('im83','icons/hard/books.png');saveImage('im83','icons/hard/books.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im84" onclick="bg('im84');change('im84','icons/hard/school-bus.png');saveImage('im84','icons/hard/school-bus.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im85" onclick="bg('im85');change('im85','icons/hard/bell.png');saveImage('im85','icons/hard/bell.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im86" onclick="bg('im86');change('im86','icons/hard/physics.png');saveImage('im86','icons/hard/physics.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im87" onclick="bg('im87');change('im87','icons/hard/professor.png');saveImage('im87','icons/hard/professor.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im88" onclick="bg('im88');change('im88','icons/hard/school.png');saveImage('im88','icons/hard/school.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im89" onclick="bg('im89');change('im89','icons/hard/books-1.png');saveImage('im89','icons/hard/books-1.png');count()"> </input> </td>
+		</tr>
+
+		
+		<tr>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im90" onclick="bg('im90');change('im90','icons/hard/bookshelf.png');saveImage('im90','icons/hard/bookshelf.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im91" onclick="bg('im91');change('im91','icons/hard/scissors.png');saveImage('im91','icons/hard/scissors.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im92" onclick="bg('im92');change('im92','icons/hard/school-bus.png');saveImage('im92','icons/hard/school-bus.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im93" onclick="bg('im93');change('im93','icons/hard/set-square.png');saveImage('im93','icons/hard/set-square.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im94" onclick="bg('im94');change('im94','icons/hard/test.png');saveImage('im94','icons/hard/test.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im95" onclick="bg('im95');change('im95','icons/hard/books-1.png');saveImage('im95','icons/hard/books-1.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im96" onclick="bg('im96');change('im96','icons/hard/professor.png');saveImage('im96','icons/hard/professor.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im97" onclick="bg('im97');change('im97','icons/hard/school.png');saveImage('im97','icons/hard/school.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im98" onclick="bg('im98');change('im98','icons/hard/books.png');saveImage('im98','icons/hard/books.png');count()"> </input> </td>
+			<td> <input type="image" class="gameImage" src="icons/unknown.png" id="im99" onclick="bg('im99');change('im99','icons/hard/blackboard-1.png');saveImage('im99','icons/hard/blackboard-1.png');count()"> </input> </td>
+		</tr>
+	
+	</table>
+
+	
+	<script src="code.js"></script>
+	<script >
+		var secondsLabel=document.getElementById("second");
+		var minutesLabel=document.getElementById("minute");
+		var totalSeconds=0;
+		function setTime(){
+			totalSeconds++;
+			secondsLabel.innerHTML=pad(totalSeconds%60);
+			minutesLabel.innerHTML=pad(parseInt(totalSeconds/60));
+		}
+	
+		function pad(val){        //return num of seconds as two digits
+			var result=val+"";
+			if(result.length<2){
+				return "0"+ result;
+			}
+			else{
+				return result;
+			}
+		}
+		function starting2(){
+			document.getElementById("0").style.visibility='hidden';
+			document.getElementById("1").style.visibility='visible';
+		}
+	</script>
+
+	<script type="text/javascript">
+		var counter=0;
+		var arr_of_img=[];
+		var arr_of_id=[];
+		var saved=[];
+		var id1='0';
+		var id2='0';
+		var size=0;
+		var i=0,j=0;
+		var arr=[
+		[0,1,2,3,4,5],
+		[6,7,8,6,9,10],
+		[11,12,7,0,13,14],
+		[15,4,16,5,10,1],
+		[11,2,14,12,8,13],
+		[17,3,16,11,17,9]];
+		function count(){
+			counter++;
+			if(test(arr_of_img[0].src)===true){
+				arr_of_img.pop();
+				arr_of_id.pop();
+				counter--;
+				return;
+			}
+			if(test(arr_of_img[1].src)===true){
+				arr_of_img.pop();
+				arr_of_id.pop();
+				counter--;
+				return;
+			}
+			if(counter>=2){
+				id1=arr_of_id[0];
+				id2=arr_of_id[1];
+				if((arr_of_id[0])==(arr_of_id[1])){                  //same image and same position
+					counter--;
+					arr_of_id.pop();
+					arr_of_img.pop();
+				}
+				else if((arr_of_img[0].src)==(arr_of_img[1].src)){   //same image but different position
+					counter=0;
+					document.getElementById(id1).src=arr_of_img[0].src;
+					document.getElementById(id2).src=arr_of_img[1].src;
+					saved.push(arr_of_img[0]);
+					size++;
+					arr_of_id.pop();
+					arr_of_id.pop();
+					arr_of_img.pop();
+					arr_of_img.pop();
+				}
+				else{                                                //different image
+					document.getElementById(id1).src="icons/unknown.png";
+					document.getElementById(id2).src="icons/unknown.png";
+					arr_of_id.pop();
+					arr_of_id.pop();
+					arr_of_img.pop();
+					arr_of_img.pop();
+				}
+			}
+		}
+		
+		function saveImage(id,img){
+			var image=new Image();
+			image.src=img;
+			arr_of_id.push(id);
+			arr_of_img.push(image);
+		}
+		function test(im){
+			for(i=0;i<size;i++){
+				if(saved[i].src===im){
+					return true;
+				}
+			}
+			return false;  
+		}
+		var flag=0;
+		var index1,index2;
+		var row,col;
+		var row1,col1;
+		var pic;
+		function hint(){
+			for(i=0;i<6 && flag==0 ;i++){
+				for(j=0;j<6 && flag==0;j++){
+					index1=(i*6)+j;
+					pic=document.getElementById("im"+index1);
+					if(pic.getAttribute("src")=="icons/unknown.png"){    
+						row=i;
+						col=j;
+						flag=1;
+					}
+				}
+			}
+			flag=0;
+			for(i=0;i<6;i++){
+				for(j=0;j<6;j++){
+					if(arr[i][j]==arr[row][col]){
+						row1=i;
+						col1=j;
+					}
+				}
+			}
+			index1=(row*6)+col;
+			index2=(row1*6)+col1;
+			document.getElementById('im' + index1).style.backgroundColor="red";
+			document.getElementById('im' + index2).style.backgroundColor="red" ;
+		}
+		function bg(idd){
+			var ph=document.getElementById(idd);
+			ph.style.backgroundColor="transparent";
+		}
+	</script>
+
+</body>
+
+</html>
