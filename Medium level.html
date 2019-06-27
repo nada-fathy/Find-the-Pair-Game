@@ -197,8 +197,8 @@
 					arr_of_img.pop();
 				}
 				else{                                                //different image
-					document.getElementById(id1).src="icons/unknown.png";
-					document.getElementById(id2).src="icons/unknown.png";
+					setTimeout(function(){document.getElementById(id1).src="icons/unknown.png";
+					document.getElementById(id2).src="icons/unknown.png";},700);
 					arr_of_id.pop();
 					arr_of_id.pop();
 					arr_of_img.pop();
