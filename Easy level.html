@@ -85,6 +85,7 @@
 			totalSeconds++;
 			secondsLabel.innerHTML=pad(totalSeconds%60);
 			minutesLabel.innerHTML=pad(parseInt(totalSeconds/60));
+			
 		}
 	
 		function pad(val){        //return num of seconds as two digits
@@ -117,6 +118,11 @@
 		[15,4,16,5,10,1],
 		[15,2,14,12,8,13],
 		[17,3,16,11,17,9]];
+
+		//score
+		var hintB=document.getElementById("2");
+		var score=0;
+		hintB.disabled=true;
 		function count(){
 			counter++;
 			if(test(arr_of_img[0].src)===true){
@@ -145,6 +151,8 @@
 					document.getElementById(id2).src=arr_of_img[1].src;
 					saved.push(arr_of_img[0]);
 					size++;
+					score=score+10;
+					hintB.disabled=false;
 					if(size==18){
 						stop();
 						window.alert("you win");
@@ -155,12 +163,13 @@
 					arr_of_img.pop();
 				}
 				else{                                                //different image
-					document.getElementById(id1).src="icons/unknown.png";
-					document.getElementById(id2).src="icons/unknown.png";
+					setTimeout(function(){document.getElementById(id1).src="icons/unknown.png";
+					document.getElementById(id2).src="icons/unknown.png";},700);
 					arr_of_id.pop();
 					arr_of_id.pop();
 					arr_of_img.pop();
 					arr_of_img.pop();
+					
 				}
 			}
 		}
@@ -185,6 +194,7 @@
 		var row1,col1;
 		var pic;
 		function hint(){
+			
 			for(i=0;i<6 && flag==0 ;i++){
 				for(j=0;j<6 && flag==0;j++){
 					index1=(i*6)+j;
@@ -209,7 +219,14 @@
 			index2=(row1*6)+col1;
 			document.getElementById('im' + index1).style.backgroundColor="red";
 			document.getElementById('im' + index2).style.backgroundColor="red" ;
+			score=score-10;
+			if(score==0){      /////////////
+				hintB.disabled=true;     
+			}
 		}
+		
+		
+		
 		function bg(idd){
 			var ph=document.getElementById(idd);
 			ph.style.backgroundColor="transparent";
@@ -228,7 +245,9 @@
 			change('im27','icons/easy/telegram.png');change('im28','icons/easy/sky.png');change('im29','icons/easy/tumbler.png');
 			change('im30','icons/easy/viber.png');change('im31','icons/easy/googlePlus.png');change('im32','icons/easy/whatsapp.png');
 			change('im33','icons/easy/spotify.png');change('im34','icons/easy/viber.png');change('im35','icons/easy/snap.png');
+			
 		}
+	
 	</script>
 
 </body>
