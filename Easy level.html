@@ -73,7 +73,6 @@
 
 	
 	</table>
-
 	
 	<script src="code.js"></script>
 	<script >
@@ -152,7 +151,13 @@
 					saved.push(arr_of_img[0]);
 					size++;
 					score=score+10;
-					hintB.disabled=false;
+					if(score==0){      
+						hintB.disabled=true;     
+					}
+					else{
+						hintB.disabled=false;
+					}
+					
 					if(size==18){
 						stop();
 						window.alert("you win");
@@ -173,6 +178,7 @@
 				}
 			}
 		}
+		
 		
 		function saveImage(id,img){
 			var image=new Image();
@@ -219,10 +225,8 @@
 			index2=(row1*6)+col1;
 			document.getElementById('im' + index1).style.backgroundColor="red";
 			document.getElementById('im' + index2).style.backgroundColor="red" ;
-			score=score-10;
-			if(score==0){      /////////////
-				hintB.disabled=true;     
-			}
+			score=score-20;
+			
 		}
 		
 		
