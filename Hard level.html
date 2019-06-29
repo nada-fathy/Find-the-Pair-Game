@@ -210,6 +210,10 @@
 		[32,33,38,40,41,27,37,28,41,42],
 		[16,43,44,45,46,40,44,47,48,49],
 		[39,43,46,20,22,49,47,48,45,42]];
+		//score
+		var hintB=document.getElementById("2");
+		var score=0;
+		hintB.disabled=true;
 		function count(){
 			counter++;
 			if(test(arr_of_img[0].src)===true){
@@ -238,6 +242,13 @@
 					document.getElementById(id2).src=arr_of_img[1].src;
 					saved.push(arr_of_img[0]);
 					size++;
+					score=score+10;
+					if(score==0){      
+						hintB.disabled=true;     
+					}
+					else{
+						hintB.disabled=false;
+					}
 					if(size==50){
 						stop();
 						window.alert("you win");
@@ -302,6 +313,7 @@
 			index2=(row1*10)+col1;
 			document.getElementById('im' + index1).style.backgroundColor="red";
 			document.getElementById('im' + index2).style.backgroundColor="red" ;
+			score=score-20;
 		}
 		function bg(idd){
 			var ph=document.getElementById(idd);
