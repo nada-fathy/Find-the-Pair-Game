@@ -12,7 +12,7 @@
 	<br/>
 	 <div class="Timer">
 	 		Timer
-             <label id="minute">00</label>:<label id="second">00</label>
+             <label id="minute">00</label>:<label id="second">00</label><br/><label id="s"></label>
 			</div>
 			<br/>
 
@@ -213,6 +213,7 @@
 		//score
 		var hintB=document.getElementById("2");
 		var score=0;
+		document.getElementById("s").innerHTML="Score:"+score;
 		hintB.disabled=true;
 		function count(){
 			counter++;
@@ -243,6 +244,7 @@
 					saved.push(arr_of_img[0]);
 					size++;
 					score=score+10;
+					document.getElementById("s").innerHTML="Score:"+score;
 					if(score==0){      
 						hintB.disabled=true;     
 					}
